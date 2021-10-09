@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style/index.css" rel="stylesheet">
+  <title>Petter's blog | Contact </title>
+</head>
+<body>
+  <header>
+    <h1 id="logo">Petter's Blog</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blog.html">Blogs</a></li>
+        <li><a href="contact.html" class="current">Contact us</a></li>
+        <li><a href="about.html">About us</a></li>
+      </ul>
+    </nav>
+
+  </header>
+  <main class="contact">
+    
+    <form id="contactform">
+      <div>
+        <div>
+          <label> Name </label>
+          <input type="text" id="name" placeholder="Name" />
+          <div class="form-error" id="nameError">Name must be more than 5 characters</div> 
+        </div>
+        
+        <div>
+          <label> Email </label>
+          <input type="text" id="email" placeholder="Email"/>
+          <div class="form-error" id="emailError">Invalid email address</div>
+        </div>
+        
+        <div>
+          <label> Subject </label>
+          <input type="text" id="subject" placeholder="Subject">
+          <div class="form-error" id="subjectError">Must be more than 15 characters</div>
+        </div>
+        
+        <div>
+          <label> Message </label>
+          <input type="text" id="message" placeholder="Message"/>
+          <div class="form-error" id="messageError">Must be more than 25 characters</div>
+        </div>
+      </div>
+      <button class="button">Submit</button>
+    </form>
+    </main>
+    <footer>
+      <div>
+        <p>If you want to contact us, here is our email: <a href="mailto:contact@petterblog.com">Contact@petterblog.com</a></p>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blog.html">Blogs</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+          <li><a href="about.html">About us</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+<script src="js/contact.js"></script>
+</html>

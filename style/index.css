@@ -1,0 +1,303 @@
+body {
+  background-color: #91ad8f;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.795);
+  padding: 10px;
+}
+
+header h1#logo {
+  text-align: center;
+  margin: auto;
+  font-family: "Castellar";
+  color: white;
+}
+
+p {
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav li {
+  display: inline-block;
+  border-bottom: #91ad8f 4px;
+  padding: 5px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a.current {
+  text-decoration: underline;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav ul {
+  padding: 0px;
+  text-align: center;
+}
+
+footer {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.795);
+}
+
+footer div {
+  width: 60%;
+  margin: auto;
+  display: flex;
+}
+
+footer div p {
+  flex: 4;
+  color: white;
+}
+
+footer div p a {
+  color: #ffffffee;
+}
+
+footer div ul {
+  flex: 1;
+}
+
+footer div ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+footer div ul li a:hover {
+  text-decoration: underline;
+}
+
+/* index page */
+
+main.home {
+  width: 60%;
+  margin: auto;
+  padding: 30px;
+}
+
+section.carousel {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  margin: auto;
+  overflow: hidden;
+  box-shadow: gray 5px 5px 7px;
+  margin-bottom: 20px;
+  background-color: white;
+}
+
+section.carousel img {
+  position: absolute;
+  height: auto;
+  width: auto;
+  max-height: 100%;
+  max-width: 100%;
+  margin: auto;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+}
+
+.leftbtn,
+.rightbtn {
+  position: absolute;
+  cursor: pointer;
+  font-size: 30px;
+  width: 40px;
+  text-align: center;
+  top: 275px;
+}
+.leftbtn:hover,
+.rightbtn:hover {
+  background-color: rgba(0, 0, 0, 0.11);
+}
+
+.leftbtn {
+  left: 10px;
+}
+.rightbtn {
+  right: 10px;
+}
+/* blog page */
+
+main.blog {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.postcard {
+  width: 300px;
+  height: 200px;
+  background-color: #a0c09e;
+  border-radius: 6px;
+  margin: 20px;
+  box-shadow: #587a56 5px 5px 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+.postcard:hover {
+  box-shadow: #385037 5px 5px 5px;
+  cursor: pointer;
+}
+
+.postcard div.posttitle {
+  padding: 8px;
+  text-align: center;
+  font-size: 25px;
+}
+
+.postcard img {
+  width: 100%;
+  position: relative;
+}
+
+.button-view {
+  width: 80%;
+  margin: auto;
+  border-radius: 6px;
+  padding: 25px;
+  text-align: center;
+}
+
+div.button-view #view {
+  border: none;
+  width: 70px;
+  height: 40px;
+  background-color: #7ffd59;
+  box-shadow: #587a56 5px 5px 5px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+div.button-view #view:hover {
+  background-color: #587a56;
+}
+
+/* specific page */
+
+main#specific {
+  width: 50%;
+  text-align: left;
+  margin: auto;
+  padding: 5px;
+}
+
+main#specific .content img {
+  display: block;
+  width: 500px;
+  height: auto;
+  margin: auto;
+}
+
+h1#home {
+  text-align: center;
+  margin: auto;
+  font-family: "Castellar";
+}
+
+/* contact page */
+
+main.contact {
+  width: 100%;
+}
+
+#contactform {
+  width: 500px;
+  padding: 30px;
+  margin: auto;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.form-error {
+  display: none;
+  color: red;
+  font-size: 1em;
+  margin-top: 2px;
+}
+.button {
+  padding: 3px;
+  border: 5px 5px 5px 5px;
+  font-size: 16px;
+}
+
+/* about page*/
+
+main.about {
+  width: 60%;
+  margin: auto;
+}
+
+@media (max-width: 320px) {
+  main.home {
+    width: 98%;
+    padding: 10px;
+  }
+  footer div {
+    width: 90%;
+  }
+  main.about {
+    width: 90%;
+  }
+  main.blog {
+    width: 98%;
+  }
+  main.contact {
+    width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  main.home {
+    width: 90%;
+    padding: 10px;
+  }
+  section.carousel {
+    height: 200px;
+  }
+  .leftbtn,
+  .rightbtn {
+    top: 80px;
+  }
+  footer div {
+    width: 90%;
+  }
+  main.about {
+    width: 90%;
+  }
+  main.blog {
+    width: 95%;
+  }
+
+  main.contact {
+    width: 100%;
+  }
+  #contactform {
+    width: 90%;
+    padding: 5px;
+  }
+}
